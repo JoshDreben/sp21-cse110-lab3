@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Josh's Journal | CSE110 LAB 2</title>
+    <meta name="author" content="Josh Dreben">
+    <link rel="shortcut icon" type="image/jpg" href="res/favicon.ico"/>
+  </head>
+  <body>
+    <main>
+      <h1>Welcome!</h1>
+      <p>
+        This is a short, yet absolutely <strong><i>enthralling</i></strong> diary of mine.
+        <br>
+        <b>Here are what the past few days looked like for me</b>
+      </p>
+      <video width="300px" autoplay controls>
+        <source src="res/sstg-4360118B-A6A5-47E0-979B-3721F82E8815.mp4">
+      </video>
+      <p><i>My favorite video of the week</i></p>
+      <img width="300px" src="res/85583647-86E9-434C-A176-EC541BA1F874.JPG" />
+      <p><i>My favorite pic of the week</i></p>
+      <audio controls src="res/Bongo Hits 11 1.mp3"></audio>
+      <p><i>My favorite soundbite of the week</i></p>
+      <nav>
+        <p>Navigation:
+        <a href="#april7">April 7</a>
+        <a href="#april6">April 6</a>
+        <a href="#april5">April 5</a></p>
+      </nav>
+      <section id="april7">
+        <header>
+          <h2>April 7</h2>
+        </header>
+        <div>
+          <details>
+            <summary><em>Summary:</em></summary>
+            <br>
+            <span>Today has been a very good day. The weather is amazing and the mocha coffee I got from <i>The Bean</i> didn't hurt my gut because I finally listened to my lactose intolerance and got almond milk instead of whole. I went to Thompkins Square Park and just sat there and enjoyed the sun and breeze for almost an hour until I met up with a friend for a little.</span>
+          </details>
+          <br>
+          <details>
+            <summary><em>Highs/Lows:</em></summary>
+            <h3>Highs</h3>
+            <ul>
+              <li>Amazing Weather</li>
+              <li>No Cramps</li>
+              <li>Met up with good friend</li>
+            </ul>
+            <h3>Lows</h3>
+            <ul>
+              <li>None!</li>
+            </ul>
+          </details>
+          <br>
+          <details>
+            <summary><em>Todos:</em></summary>
+            <ol>
+              <li>Go outside</li>
+              <li>Watch CSE130 Lecture</li>
+              <li>CSE 110 Lab 2</li>
+            </ol>
+          </details>
+        </div>
+        <footer>
+          <hr>
+        </footer>
+      </section>
+      <br>
+      <section id="april6">
+        <header>
+          <h2>April 6</h2>
+        </header>
+        <div>
+          <details>
+            <summary><em>Summary:</em></summary>
+            <br>
+            <span>Today hasn't been the best. I didn't get much sleep so I've felt pretty damn gross all day. I've also been spending most of the day trying to just get a vaccine appointment but it looks like it's gonna be awhile before anything opens up.</span>
+          </details>
+          <br>
+          <details>
+            <summary><em>Highs/Lows:</em></summary>
+            <h3>Highs</h3>
+            <ul>
+              <li>Saw a few friends</li>
+            </ul>
+            <h3>Lows</h3>
+            <ul>
+              <li>Bad weather</li>
+              <li>Felt gross</li>
+            </ul>
+          </details>
+          <br>
+          <details>
+            <summary><em>Todos:</em></summary>
+            <ol>
+              <li>Go outside</li>
+              <li>Watch CSE101 Lecture</li>
+              <li>Watch CSE110 Lecture</li>
+            </ol>
+          </details>
+        </div>
+        <footer>
+          <hr>
+        </footer>
+      </section>
+      <br>
+      <section id="april5">
+        <header>
+          <h2>April 5</h2>
+        </header>
+        <div>
+          <details>
+            <summary><em>Summary:</em></summary>
+            <br>
+            <span>Today I haven't done much at all. Me and my roomates went to Trader Joes to get some groceries, and then after that I just chilled at home.</span>
+          </details>
+          <br>
+          <details>
+            <summary><em>Highs/Lows:</em></summary>
+            <h3>Highs</h3>
+            <ul>
+              <li>Food in fridge!</li>
+              <li>Good chill at home</li>
+            </ul>
+            <h3>Lows</h3>
+            <ul>
+              <li>Not much happened</li>
+            </ul>
+          </details>
+          <br>
+          <details>
+            <summary><em>Todos:</em></summary>
+            <ol>
+              <li>Go outside</li>
+              <li>Watch CSE130 Lecture</li>
+            </ol>
+          </details>
+        </div>
+        <footer>
+          <hr>
+        </footer>
+      </section>
+      <h2>Write a new Entry!</h2>
+      <form>
+        <fieldset>
+          <label for="jentry">Journal Entry Title:</label>
+          <input type="text" id="jentry" name="jentry"><br>
+          <br>
+          Good Weather? <input type="checkbox"><br>
+          Good Day? <input type="checkbox"><br>
+          Intestinal cramps?
+          Yes<input type="radio" name="cramps">
+          No<input type="radio" name="cramps"><br>
+          <br>
+          Today's Date: <input type="date"><br>
+          <br>
+          Summary: <br> <textarea cols="60" rows="15" ></textarea><br>
+          <label for="coffee">What Coffee Did You Drink: </label>
+          <input list="coffee" id="coffee" name="coffee" />
+          <datalist id="coffee">
+            <option value="Mocha">Mocha</option>
+            <option value="Drip">Drip</option>
+            <option value="Cold Brew">Cold Brew</option>
+          </datalist>
+          <br><br>
+          <label for="milk">What Milk Did You Use: </label>
+          <select>
+            <option value="Whole">Whole</option>
+            <option value="Almond">Almond</option>
+            <option value="Oat">Oat</option>
+          </select>
+          <br>
+          <button>Submit!</button>
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>
