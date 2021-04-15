@@ -4,29 +4,43 @@
     <title>Josh's Journal | CSE110 LAB 2</title>
     <meta name="author" content="Josh Dreben">
     <link rel="shortcut icon" type="image/jpg" href="res/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="main.css"/>
   </head>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+  </style> 
   <body>
     <main>
-      <h1>Welcome!</h1>
-      <p>
-        This is a short, yet absolutely <strong><i>enthralling</i></strong> diary of mine.
-        <br>
-        <b>Here are what the past few days looked like for me</b>
-      </p>
-      <video width="300" autoplay controls>
-        <source src="res/sstg-4360118B-A6A5-47E0-979B-3721F82E8815.mp4">
-      </video>
-      <p><i>My favorite video of the week</i></p>
-      <img width="300" alt="pretty day at the park" src="res/85583647-86E9-434C-A176-EC541BA1F874.JPG" />
-      <p><i>My favorite pic of the week</i></p>
-      <audio controls src="res/bongo.mp3"></audio>
-      <p><i>My favorite soundbite of the week</i></p>
-      <nav>
-        <p>Navigation:
-        <a href="#april7">April 7</a>
-        <a href="#april6">April 6</a>
-        <a href="#april5">April 5</a></p>
-      </nav>
+      <div class="top-head">
+        <h1>Welcome!</h1>
+        <p>
+          this is a short, yet absolutely <strong><i>enthralling</i></strong> diary of mine.
+          <br>
+          <b>here are what the past few days looked like for me</b>
+        </p>
+      </div>
+      <div class="media">
+        <div id="fav-video">
+          <video width="300" autoplay controls>
+            <source src="res/sstg-4360118B-A6A5-47E0-979B-3721F82E8815.mp4">
+          </video>
+          <p><i>My favorite video of the week</i></p>
+        </div>
+        <div id="fav-pic">
+          <img width="300" alt="pretty day at the park" src="res/85583647-86E9-434C-A176-EC541BA1F874.JPG" />
+          <p><i>My favorite pic of the week</i></p>
+        </div>
+        <div id="fav-sound">
+          <audio controls src="res/bongo.mp3"></audio>
+          <p><i>My favorite soundbite of the week</i></p>
+        </div>
+        <nav id="nav-bar">
+          <p>Navigation:
+          <a href="#april7">April 7</a>
+          <a href="#april6">April 6</a>
+          <a href="#april5">April 5</a></p>
+        </nav>
+      </div>
       <section id="april7">
         <header>
           <h2>April 7</h2>
@@ -175,4 +189,12 @@
       </form>
     </main>
   </body>
+
+  <style>
+    /* removing any and all padding/margin */
+    * {
+      margin: 0;
+      padding: 0;
+    }
+  </style>
 </html>
