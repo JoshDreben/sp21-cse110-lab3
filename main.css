@@ -1,0 +1,116 @@
+body {
+  background-color: rgb(255, 243, 233);
+  font-size: medium;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.top-head {
+  position: relative;
+  top: 0.5rem;
+  left: 0rem;
+  width: 95vw;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: hsl(27, 100%, 96%);
+  border-style: solid;
+  border-color: black;
+  border-width: 0.1cm;
+  border-radius: 10px;
+  padding: 0.5rem;
+  box-shadow: 0ch 1ch 8px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.top-head > h1 {
+  font-weight: 500;
+  margin: auto;
+  display: inline;
+}
+
+.top-head p {
+  line-height: 0.8cm;
+  text-decoration: underline wavy;
+  display: inline-block;
+}
+
+.media {
+  display: grid;
+  grid-template:
+    "video"
+    "picture"
+    "soundbite"
+    "nav";
+  row-gap: 1em;
+  margin: 1rem;
+}
+
+#fav-video,
+#fav-pic,
+#fav-sound,
+#nav-bar {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 800;
+  border: black solid 0.05in;
+  border-radius: 10px;
+  background-color: black;
+  color: #fff4eb;
+  box-shadow: 0ch 1ch 8px rgba(0, 0, 0, 0.2);
+  padding: 0.5rem;
+}
+
+#nav-bar {
+  grid-area: "nav";
+  padding: 0.5rem;
+  color: black;
+  background-color: rgb(159, 219, 199);
+  border: rgb(159, 219, 199) solid 0.05in;
+  box-shadow: 0ch 1ch 20px rgba(0, 0, 0, 0.2);
+}
+
+#nav-bar a {
+  color: hsl(27, 100%, 96%);
+  text-decoration: none;
+  background-color: black;
+  border-radius: 5px;
+  box-shadow: 0ch 0.5ch 5px rgba(0, 0, 0, 0.2);
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+
+#nav-bar a:visited {
+  color: hsl(27, 100%, 96%);
+}
+
+#nav-bar a:hover {
+  color: black;
+  background-color: #fff4eb;
+}
+
+video,
+img,
+audio {
+  border-radius: 6px;
+}
+
+.media #fav-video {
+  grid-area: "video";
+}
+.media #fav-pic {
+  grid-area: "picture";
+}
+
+.media #fav-sound {
+  grid-area: "soundbite";
+}
