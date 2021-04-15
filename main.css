@@ -44,10 +44,9 @@ body {
 .media {
   display: grid;
   grid-template:
-    "video"
-    "picture"
-    "soundbite"
-    "nav";
+    "video picture"
+    "soundbite soundbite"
+    "nav nav";
   row-gap: 1em;
   margin: 1rem;
 }
@@ -69,6 +68,8 @@ body {
 }
 
 #nav-bar {
+  display: flex;
+  align-items: center;
   grid-area: "nav";
   padding: 0.5rem;
   color: black;
@@ -113,4 +114,17 @@ audio {
 
 .media #fav-sound {
   grid-area: "soundbite";
+}
+
+@media (max-width: 700px) {
+  .media {
+    grid-template:
+      "video"
+      "soundbite"
+      "nav";
+  }
+  .top-head {
+    width: 18.8rem;
+    margin: 0 auto;
+  }
 }
