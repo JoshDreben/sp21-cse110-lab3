@@ -41,7 +41,7 @@
           <a href="#april5">April 5</a></p>
         </nav>
       </div>
-      <section id="april7">
+      <section id="april7" class="april journal">
         <header>
           <h2>April 7</h2>
         </header>
@@ -52,7 +52,7 @@
             <span>Today has been a very good day. The weather is amazing and the mocha coffee I got from <i>The Bean</i> didn't hurt my gut because I finally listened to my lactose intolerance and got almond milk instead of whole. I went to Thompkins Square Park and just sat there and enjoyed the sun and breeze for almost an hour until I met up with a friend for a little.</span>
           </details>
           <br>
-          <details>
+          <details class="high low">
             <summary><em>Highs/Lows:</em></summary>
             <h3>Highs</h3>
             <ul>
@@ -66,7 +66,7 @@
             </ul>
           </details>
           <br>
-          <details>
+          <details class="todo">
             <summary><em>Todos:</em></summary>
             <ol>
               <li>Go outside</li>
@@ -80,7 +80,7 @@
         </footer>
       </section>
       <br>
-      <section id="april6">
+      <section id="april6" class="april journal">
         <header>
           <h2>April 6</h2>
         </header>
@@ -91,7 +91,7 @@
             <span>Today hasn't been the best. I didn't get much sleep so I've felt pretty damn gross all day. I've also been spending most of the day trying to just get a vaccine appointment but it looks like it's gonna be awhile before anything opens up.</span>
           </details>
           <br>
-          <details>
+          <details class="high low">
             <summary><em>Highs/Lows:</em></summary>
             <h3>Highs</h3>
             <ul>
@@ -104,7 +104,7 @@
             </ul>
           </details>
           <br>
-          <details>
+          <details class="todo">
             <summary><em>Todos:</em></summary>
             <ol>
               <li>Go outside</li>
@@ -118,7 +118,7 @@
         </footer>
       </section>
       <br>
-      <section id="april5">
+      <section id="april5" class="april journal">
         <header>
           <h2>April 5</h2>
         </header>
@@ -129,7 +129,7 @@
             <span>Today I haven't done much at all. Me and my roomates went to Trader Joes to get some groceries, and then after that I just chilled at home.</span>
           </details>
           <br>
-          <details>
+          <details class="high low">
             <summary><em>Highs/Lows:</em></summary>
             <h3>Highs</h3>
             <ul>
@@ -142,7 +142,7 @@
             </ul>
           </details>
           <br>
-          <details>
+          <details class="todo">
             <summary><em>Todos:</em></summary>
             <ol>
               <li>Go outside</li>
@@ -154,19 +154,19 @@
           <hr>
         </footer>
       </section>
-      <h2>Write a new Entry!</h2>
+      <h2 class="entry-title">Write a new Entry!</h2>
       <form>
         <fieldset>
           <label >Journal Entry Title:</label>
           <input type="text" id="jentry" name="jentry"><br>
           <br>
-          Good Weather? <input type="checkbox"><br>
-          Good Day? <input type="checkbox"><br>
+          <div>Good Weather? <input type="checkbox"></div><br>
+          <div>Good Day? <input type="checkbox"></div><br>
           Intestinal cramps?
-          Yes<input type="radio" name="cramps">
-          No<input type="radio" name="cramps"><br>
+          <div>Yes <input type="radio" name="cramps"></div>
+          <div>No <input type="radio" name="cramps"></div><br>
           <br>
-          Today's Date: <input type="date"><br>
+          Today's Date:<input type="date"><br>
           <br>
           Summary: <br> <textarea cols="60" rows="15" ></textarea><br>
           <label >What Coffee Did You Drink: </label>
